@@ -9,7 +9,7 @@ executable conformance claim through this scaffold.
 | Target specification | Unreleased draft `0.1.0` |
 | Standard source | `orks-standard` |
 | Exact source commit | `52ffc5c88dc54598f3a48864942dfa505b1287e8` |
-| Schema generation selected for later work | JSON Schema Draft 2020-12 |
+| Schema generation selected | JSON Schema Draft 2020-12 |
 | Generation reverified | 2026-07-20 |
 
 The exact source tree is the contract input. Branch heads, tags, nearby
@@ -20,10 +20,12 @@ The source pin identifies reviewed public bytes. It does not make
 `orks-standard` a build-time or runtime dependency, turn the draft into a
 release, or authorize this repository to reinterpret normative behavior.
 
-[JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12) is recorded
-for later schema work. No schema implementation, compiler, validation
-behavior, runtime, or dependency has been selected or added in this scaffold.
-A generation or source-pin change requires an approved project decision and a
+[JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12) is the
+selected generation for ORKS-0202. The repository contains a task-local,
+hash-locked validation dependency closure and exact upstream qualification
+tests, but no ORKS schema or executable ORKS conformance behavior yet. These
+qualification inputs cannot create or reinterpret normative ORKS behavior. A
+generation or source-pin change requires an approved project decision and a
 new exact pin; validation fails closed rather than inferring a replacement.
 
 Return to the [repository overview](README.md) or the
