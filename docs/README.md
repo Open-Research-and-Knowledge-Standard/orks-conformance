@@ -1,17 +1,21 @@
 # Conformance Documentation
 
 - Classification: Informative
-- Status: Repository scaffold index
+- Status: ORKS-0202 foundation index
 
 These documents describe repository boundaries, the pinned Standard Kernel
-input, and ownership reserved for later conformance work. They do not define
+input, task-local dependency qualification, upstream validator-qualification
+data, and ownership reserved for later conformance work. They do not define
 ORKS requirements or executable schema, fixture, manifest, result, report, or
-tooling formats.
+public tooling formats.
 
 ## Documents
 
 - [Pinned standard input](../SUPPORTED-STANDARD.md)
 - [Fixture policy](fixture-policy.md)
+- [Dependency policy](dependency-policy.md)
+- [JSON Schema Test Suite provenance](../vendor/json-schema-test-suite/UPSTREAM.md)
+- [JSON Schema Test Suite manifest](../vendor/json-schema-test-suite/MANIFEST.sha256)
 - [Schema ownership](../schemas/README.md)
 - [Fixture ownership](../fixtures/README.md)
 - [Manifest ownership](../manifests/README.md)
@@ -19,9 +23,10 @@ tooling formats.
 - [Script ownership](../scripts/README.md)
 - [Repository overview](../README.md)
 
-Reserved directories and index files do not imply that schemas, executable
-fixtures, manifest formats, report formats, or conformance tooling have been
-implemented.
+The dependency lock and qualification corpus are developer-tooling inputs.
+Reserved directories and index files do not imply that ORKS schemas,
+executable fixtures, manifest formats, report formats, or conformance tooling
+have been implemented.
 
 Normative ORKS behavior remains in the exact public source tree identified by
 the pinned standard input. Informative repository documentation cannot create,

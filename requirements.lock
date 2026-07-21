@@ -1,0 +1,58 @@
+# ORKS-0202 local developer tooling only. Redistribution is prohibited.
+# Resolver: pip 26.1.2, CPython 3.14.6, cp314,
+# manylinux_2_17_x86_64, binary wheels only, and no extras.
+# Source: exact final, non-yanked wheels from https://pypi.org/simple/.
+# Accepted resolver report SHA-256:
+# f5c5b30ce945421fd917be331f301cbd22463340a4f7b98503e08bec6b3ed410
+# Every distribution declares MIT at wheel level. The admitted rpds-py
+# CycloneDX SBOM SHA-256 is:
+# 80a3bfbae1607e51b2569566a469b8a6d9a984d4923c0824086418a6c8a3e763
+# Its native license-expression set is exactly:
+# MIT
+# MIT OR Apache-2.0
+# Apache-2.0 WITH LLVM-exception
+# (MIT OR Apache-2.0) AND Unicode-3.0
+# Native components: archery 1.2.2; heck 0.5.0; libc 0.2.177;
+# once_cell 1.21.3; proc-macro2 1.0.103; pyo3, pyo3-build-config,
+# pyo3-ffi, pyo3-macros, and pyo3-macros-backend 0.29.0;
+# quote 1.0.42; rpds 1.2.1; smallvec 1.15.1; syn 2.0.111;
+# target-lexicon 0.13.3; triomphe 0.1.15; unicode-ident 1.0.22.
+# See docs/dependency-policy.md for artifact provenance, dependency edges,
+# attribution evidence, native-member evidence, and use restrictions.
+
+# Artifact: attrs-26.1.0-py3-none-any.whl
+# License member: attrs-26.1.0.dist-info/licenses/LICENSE
+# License member SHA-256:
+# 882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f
+attrs==26.1.0 \
+    --hash=sha256:c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309
+
+# Artifact: jsonschema-4.26.0-py3-none-any.whl
+# License member: jsonschema-4.26.0.dist-info/licenses/COPYING
+# License member SHA-256:
+# 4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439
+jsonschema==4.26.0 \
+    --hash=sha256:d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce
+
+# Artifact: jsonschema_specifications-2025.9.1-py3-none-any.whl
+# License member:
+# jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING
+# License member SHA-256:
+# 42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c
+jsonschema-specifications==2025.9.1 \
+    --hash=sha256:98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe
+
+# Artifact: referencing-0.37.0-py3-none-any.whl
+# License member: referencing-0.37.0.dist-info/licenses/COPYING
+# License member SHA-256:
+# 42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c
+referencing==0.37.0 \
+    --hash=sha256:381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231
+
+# Artifact:
+# rpds_py-2026.6.3-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+# License member: rpds_py-2026.6.3.dist-info/licenses/LICENSE
+# License member SHA-256:
+# 314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909
+rpds-py==2026.6.3 \
+    --hash=sha256:dc319e5a1de4b6913aac94bf6a2f9e847371e0a140a43dd4991db1a09bc2d504

@@ -2,9 +2,9 @@
 
 ## Repository Status
 
-This repository currently contains only the bounded public repository
-scaffold for executable Open Research and Knowledge Standard (ORKS)
-conformance work.
+This repository contains the bounded public foundation for executable Open
+Research and Knowledge Standard (ORKS) conformance work. ORKS-0202 schema
+compilation and validation work is in progress.
 
 It targets the accepted, unreleased ORKS `0.1.0` draft at the exact
 `orks-standard` source commit
@@ -12,10 +12,12 @@ It targets the accepted, unreleased ORKS `0.1.0` draft at the exact
 executable conformance behavior or claim conformance to a released ORKS
 specification.
 
-No JSON Schema, executable fixture, canonical-byte vector, conformance
-manifest, result or report format, conformance command-line interface,
-package, dependency stack, continuous-integration workflow, or release
-artifact is present in this scaffold.
+The repository now includes a task-local, hash-locked JSON Schema validation
+dependency closure and an exact mandatory Draft 2020-12 JSON Schema Test Suite
+qualification subset. It does not yet include an ORKS JSON Schema, executable
+ORKS fixture, canonical-byte vector, conformance manifest, result or report
+format, public conformance command-line interface, continuous-integration
+workflow, package, or release artifact.
 
 ## Repository Scope
 
@@ -37,6 +39,8 @@ indexes, telemetry, and installation-local state are outside this repository.
 - [Pinned standard input](SUPPORTED-STANDARD.md)
 - [Documentation and ownership index](docs/README.md)
 - [Fixture policy](docs/fixture-policy.md)
+- [Dependency policy](docs/dependency-policy.md)
+- [JSON Schema Test Suite provenance](vendor/json-schema-test-suite/UPSTREAM.md)
 
 The ownership index links the reserved schema, fixture, manifest, result, and
 script areas without defining their later contracts.
@@ -51,11 +55,13 @@ scripts/validate-repository.sh
 
 The validator resolves the repository from its own path, so it can also be
 invoked through a relative or absolute path from another working directory.
-It runs offline and checks repository-scaffold integrity and public-content
-boundaries only. A passing result is not an ORKS conformance result.
+It runs offline and checks repository integrity, the exact dependency records,
+the pinned upstream qualification subset, and public-content boundaries. A
+passing result is not an ORKS conformance result.
 
 ## Contributions and License
 
-Contributions require Developer Certificate of Origin 1.1 sign-off. This
-repository is licensed under the Apache License, Version 2.0. See
-[LICENSE](LICENSE) and [NOTICE](NOTICE).
+Contributions require Developer Certificate of Origin 1.1 sign-off.
+ORKS-authored content is licensed under the Apache License, Version 2.0; see
+[LICENSE](LICENSE) and [NOTICE](NOTICE). The pinned JSON Schema Test Suite
+subset retains its upstream [MIT License](vendor/json-schema-test-suite/LICENSE).

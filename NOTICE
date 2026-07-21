@@ -1,2 +1,6 @@
 Open Research and Knowledge Standard
 Copyright 2026 Adam Claassens
+
+This product includes a subset of the JSON Schema Test Suite,
+Copyright (c) 2012 Julian Berman, licensed under the MIT License.
+See vendor/json-schema-test-suite/LICENSE.
