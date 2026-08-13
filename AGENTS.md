@@ -1,69 +1,38 @@
-# ORKS Conformance Instructions
+---
+type: runtime-guidance
+title: orks-conformance - agent entry point
+description: Generated entry point for orks-conformance, part of ORKS (Open Research and Knowledge Standard). Roles: code. Access: read-only.
+resource: orks-conformance/AGENTS.md
+generated: true
+authoritative: false
+derived_from: .orca/project-profile.md
+baseline_version: 0.23.0
+regenerate_with: the bootstrap capability
+edit: unsafe - regenerated, and edits fix nothing upstream
+---
 
-You are working in `orks-conformance`, the public executable conformance
-repository for the Open Research and Knowledge Standard.
+# orks-conformance
 
-## Required Startup
+Part of **ORKS (Open Research and Knowledge Standard)**. Roles: `code`.
+Access this session: **read-only**.
 
-1. Read the shared-parent `AGENTS.md`.
-2. Read this file.
-3. Read `orks-planning/sessions/current.md` and the active backlog contract.
-4. Read the pinned public `orks-standard` contract required by the task.
-5. Check Git status for every repository mounted in the session.
-6. Identify the approved task, dependencies, exclusions, and exact
-   repository-local verification command before changing files.
+The project profile is authoritative. It is held in a repository that is not
+public and is deliberately not named here; an agent working in this project
+resolves it through the runtime, not through this file. This file is generated and carries no rules of its own. It does **not** restate the full authority chain: this repository is public and the chain names repositories that are not. **A document not listed in the chain does not govern**, and the chain is read from the profile, not from here.
 
-## Authority and Ownership
+## Rules for this repository
 
-- `orks-planning` owns accepted product decisions, delivery state, risks, and
-  repository boundaries.
-- `orks-standard` owns normative ORKS language, examples, versioning,
-  compatibility, and migrations.
-- This repository owns JSON Schemas, executable positive and negative
-  fixtures, canonical-byte vectors, compatibility fixtures, conformance
-  manifests and reports, and conformance tooling.
-- A schema, fixture, validator, or report MUST NOT create, weaken, reinterpret,
-  or silently repair normative behavior absent from the pinned standard.
-- Keep production storage/query logic, Rust harness implementation, profiles,
-  provider evaluation, models, and installation-local behavior out of this
-  repository.
+Declared at `RULES.md`. Read it before changing anything here.
 
-## Fixture and Public-Content Rules
+## Authority chain
 
-- Use only complete synthetic or safely licensed fixtures with explicit
-  provenance and expected outcomes.
-- Do not fetch fixture content during deterministic validation.
-- Do not commit private corpora, unlicensed or unauthorized third-party
-  copyrighted material, credentials, raw prompts or responses, model files,
-  generated indexes, telemetry, host paths, local bindings, or installation
-  profiles.
-- Keep positive, negative, boundary, hostile, and compatibility expectations
-  explicit. Never use redaction or normalization to turn an invalid input into
-  a passing fixture unless the pinned standard requires that exact behavior.
-- Pin supported standard versions and compatibility profiles exactly. Do not
-  infer support from a branch name, nearby version, or latest upstream state.
-- Use ASCII for repository documentation and metadata unless an approved
-  fixture explicitly tests Unicode behavior.
+| # | Repository | Path | Owns |
+|---|---|---|---|
+| 12 | `orks-standard` | `RULES.md` | `orks-standard`'s own rules |
+| 13 | `orks-conformance` | `RULES.md` | `orks-conformance`'s own rules |
+| 14 | `.github` | `RULES.md` | `.github`'s own rules |
 
-## Work Rules
-
-- Work only on an approved ORKS backlog task and preserve its later-task
-  exclusions.
-- Record costly-to-reverse runtime, dependency, schema, manifest, or result-
-  format choices in `orks-planning` before implementation.
-- Keep deterministic checks offline and runnable from any working directory.
-- Test parsers, canonicalization, identity bytes, resource ceilings,
-  diagnostics, privacy boundaries, and failure ordering before relying on
-  them.
-- Sign public commits under Developer Certificate of Origin 1.1.
-- Do not add workflows, secrets, apps, webhooks, Pages, external services, or
-  package publication without explicit approval and review.
-- Do not load Directus, `pc-standards`, ProbablyComputers project authority,
-  unrelated repositories, host-global MCP servers, plugins, apps, or agents.
-
-## Closeout
-
-Run the repository-local validator and task-specific fixture tests, run
-`git diff --check`, inspect the complete public diff for licensing, secrets,
-private content, unsafe fixtures, and ownership mistakes, update the ORKS
-planning handoff, and follow `orks-planning/runbooks/session-end.md`.
+**11 entries are withheld** - they name repositories that are not
+public, and this file is. The count is stated rather than the names: a reader
+outside cannot act on them, and a short chain and a filtered one must not look
+alike. An agent inside the project reads the full chain from the profile.
