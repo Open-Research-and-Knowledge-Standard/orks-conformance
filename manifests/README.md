@@ -1,11 +1,14 @@
 # Manifest Ownership
 
-- Status: Reserved for later approved work
+- Status: ORKS-0202 subset-scoped partition
 
-This directory is reserved for a future versioned conformance manifest tied to
-the exact [pinned standard input](../SUPPORTED-STANDARD.md).
+[orks-schema-dialect-2020-12-portable-v1-partition.json](orks-schema-dialect-2020-12-portable-v1-partition.json)
+is the construct-only partition of the pinned mandatory Draft 2020-12 suite
+under `orks-schema-dialect:2020-12-portable-v1`. It is produced by
+[classify-dialect.py](../scripts/classify-dialect.py). It is not a released
+conformance manifest and does not authorize schema authoring.
 
 No manifest format, field set, identifier scheme, schema, or serialization
-contract exists in this scaffold.
+contract exists beyond that partition record.
 
 Return to the [documentation index](../docs/README.md).

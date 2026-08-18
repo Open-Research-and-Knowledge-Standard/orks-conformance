@@ -54,7 +54,9 @@ STATIC_PATHS=(
   results/README.md
   schemas/README.md
   scripts/README.md
+  scripts/classify-dialect.py
   scripts/validate-repository.sh
+  manifests/orks-schema-dialect-2020-12-portable-v1-partition.json
   skills-lock.json
   vendor/json-schema-test-suite/MANIFEST.sha256
   vendor/json-schema-test-suite/UPSTREAM.md
@@ -389,8 +391,8 @@ mapfile -t EXPECTED_PATHS < <(printf '%s\n' "${EXPECTED_PATHS[@]}" | sort -u)
 # 114 -> 116: the two generated entry points, `AGENTS.md` and `CLAUDE.md`. The
 # directory count below does not move with them - both sit at the repository
 # root, which is already counted.
-[ "${#EXPECTED_PATHS[@]}" -eq 116 ] || \
-  fail 'approved repository inventory must contain exactly 116 files'
+  [ "${#EXPECTED_PATHS[@]}" -eq 118 ] || \
+    fail 'approved repository inventory must contain exactly 118 files'
 
 declare -A expected_path_set=()
 declare -A expected_directory_set=( [.agents]=1 [.codex]=1 )

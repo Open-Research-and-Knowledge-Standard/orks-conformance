@@ -1,0 +1,3145 @@
+{
+  "classifier_sha256": "32156aef9de48a9c970df14e492cddf88bc315abc53c8bbaf033b09d1befd2d4",
+  "dialect": "orks-schema-dialect:2020-12-portable-v1",
+  "groups": [
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000613"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "additionalProperties.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "allOf.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "allOf.json",
+      "group": 9,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "allOf.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "allOf.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "anchor.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "anchor.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "anchor.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "anchor.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "anyOf.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "anyOf.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "boolean_schema.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000589"
+      ]
+    },
+    {
+      "assertions": 9,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "boolean_schema.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000589"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 11,
+      "rules": []
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "const.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "const.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "const.json",
+      "group": 14,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "const.json",
+      "group": 15,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "const.json",
+      "group": 16,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "contains.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "content.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "content.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "content.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "content.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "default.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "default.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "default.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "defs.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "dependentRequired.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "dependentRequired.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "dependentRequired.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "dependentRequired.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 8,
+      "disposition": "IN_DIALECT",
+      "file": "dependentSchemas.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "dependentSchemas.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "dependentSchemas.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "dependentSchemas.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 9,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 10,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 14,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 15,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 16,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 17,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 18,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 19,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "dynamicRef.json",
+      "group": 20,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 11,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 12,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 13,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "enum.json",
+      "group": 14,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "exclusiveMaximum.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "exclusiveMinimum.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 9,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 10,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 14,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 15,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 16,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 17,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "format.json",
+      "group": 18,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "if-then-else.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000606"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "if-then-else.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000606"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "if-then-else.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "if-then-else.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "if-then-else.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000606"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "if-then-else.json",
+      "group": 11,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "infinite-loop-detection.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "items.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "items.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxContains.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxContains.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxContains.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxContains.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxContains.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "maxItems.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxItems.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "maxLength.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxLength.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "maxProperties.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maxProperties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "maxProperties.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "maximum.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "maximum.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minContains.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "minItems.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minItems.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "minLength.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minLength.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "IN_DIALECT",
+      "file": "minProperties.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minProperties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "minimum.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000599"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "minimum.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "multipleOf.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "multipleOf.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "multipleOf.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "multipleOf.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "multipleOf.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "not.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000602"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "not.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "not.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "oneOf.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "oneOf.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "pattern.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000631"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "pattern.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000625"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "pattern.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000631"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000615"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000625"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000625"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000615"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000631"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "patternProperties.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000631"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "prefixItems.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "prefixItems.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "prefixItems.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "prefixItems.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "properties.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "properties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000615"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "properties.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "properties.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "properties.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "properties.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "IN_DIALECT",
+      "file": "propertyNames.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "propertyNames.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000631"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "propertyNames.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "propertyNames.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "propertyNames.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "propertyNames.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 4,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 6,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 14,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 15,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 16,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 17,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 18,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 19,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 20,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 21,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 22,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 23,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 24,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 25,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 26,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 27,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 28,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "ref.json",
+      "group": 29,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 30,
+      "rules": [
+        "ORKS-RULE-000606"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 31,
+      "rules": [
+        "ORKS-RULE-000606"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 32,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 33,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 34,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "ref.json",
+      "group": 35,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 3,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 10,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 11,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 12,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 13,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "refRemote.json",
+      "group": 14,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "required.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "required.json",
+      "group": 1,
+      "rules": []
+    },
+    {
+      "assertions": 1,
+      "disposition": "IN_DIALECT",
+      "file": "required.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "required.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "required.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 0,
+      "rules": []
+    },
+    {
+      "assertions": 9,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "type.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000601"
+      ]
+    },
+    {
+      "assertions": 9,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 2,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 3,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 4,
+      "rules": []
+    },
+    {
+      "assertions": 10,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 5,
+      "rules": []
+    },
+    {
+      "assertions": 10,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 6,
+      "rules": []
+    },
+    {
+      "assertions": 7,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 7,
+      "rules": []
+    },
+    {
+      "assertions": 2,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 8,
+      "rules": []
+    },
+    {
+      "assertions": 5,
+      "disposition": "IN_DIALECT",
+      "file": "type.json",
+      "group": 9,
+      "rules": []
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "type.json",
+      "group": 10,
+      "rules": [
+        "ORKS-RULE-000602"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 9,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 10,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 14,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 15,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 16,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 17,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 18,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 19,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 20,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 21,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 22,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 23,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 24,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 25,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 26,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 27,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedItems.json",
+      "group": 28,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 6,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 7,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 8,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 9,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 10,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 11,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 12,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 13,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 14,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 15,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 4,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 16,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 17,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 18,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 19,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 20,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 21,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 22,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 23,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 24,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 25,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 26,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 27,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 28,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 29,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 30,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 31,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 32,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 7,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 33,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 34,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 21,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 35,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 6,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 36,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 37,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 38,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 39,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 40,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 1,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 41,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 42,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "unevaluatedProperties.json",
+      "group": 43,
+      "rules": [
+        "ORKS-RULE-000592"
+      ]
+    },
+    {
+      "assertions": 28,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 2,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 15,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 3,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 8,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 4,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 5,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "uniqueItems.json",
+      "group": 5,
+      "rules": [
+        "ORKS-RULE-000607"
+      ]
+    },
+    {
+      "assertions": 3,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "vocabulary.json",
+      "group": 0,
+      "rules": [
+        "ORKS-RULE-000590"
+      ]
+    },
+    {
+      "assertions": 2,
+      "disposition": "OUT_OF_DIALECT",
+      "file": "vocabulary.json",
+      "group": 1,
+      "rules": [
+        "ORKS-RULE-000590"
+      ]
+    }
+  ],
+  "suite_commit": "c0b038ad7244712cf73650f44e90d0bc5704e8c7",
+  "summary": {
+    "assertion_count": 1299,
+    "assertions": {
+      "ERROR": 0,
+      "IN_DIALECT": 541,
+      "OUT_OF_DIALECT": 758
+    },
+    "group_count": 383,
+    "groups": {
+      "ERROR": 0,
+      "IN_DIALECT": 165,
+      "OUT_OF_DIALECT": 218
+    },
+    "noninterference": {
+      "flipped_expected_equal": true,
+      "poisoned_filename_uri_equal": true,
+      "poisoned_instance_equal": true,
+      "reversed_discovery_equal": true,
+      "stripped_descriptions_equal": true
+    }
+  }
+}
