@@ -1,0 +1,41 @@
+{
+  "authority": [
+    "Decision 0049",
+    "Decision 0062",
+    "Decision 0063",
+    "Decision 0064"
+  ],
+  "baseline": {
+    "checked": 541,
+    "error": 0,
+    "match": 541,
+    "mismatch": 0
+  },
+  "candidate": "jsonschema==4.26.0",
+  "classifier_sha256": "32156aef9de48a9c970df14e492cddf88bc315abc53c8bbaf033b09d1befd2d4",
+  "conformance_claim": false,
+  "date": "2026-08-18",
+  "dialect": "orks-schema-dialect:2020-12-portable-v1",
+  "flip_first": {
+    "checked": 541,
+    "error": 0,
+    "first_fail": {
+      "actual": true,
+      "expected": false,
+      "file": "additionalProperties.json",
+      "group": 0,
+      "kind": "mismatch",
+      "test": 0
+    },
+    "match": 540,
+    "mismatch": 1
+  },
+  "interpreter_sha256": "f14781fc2d1dc0906fde82448c806981a6d978aa71591ed70fca0880225b174c",
+  "lock_sha256": "299234d5a5ee23e9e46a8f34205fcfc0b884c3610f1b61e474c55f8a493bed22",
+  "out_of_dialect_executed": false,
+  "partition": "manifests/orks-schema-dialect-2020-12-portable-v1-partition.json",
+  "partition_sha256": "f23988cd2bdefa2f20c2cd81b05a8e4e0b6622278f880b31644ae97385a3cfee",
+  "retrieve_raises": "NoSuchResource",
+  "runner": "scripts/run-subset-scoped-incumbent.py",
+  "suite_commit": "c0b038ad7244712cf73650f44e90d0bc5704e8c7"
+}

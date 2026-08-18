@@ -18,6 +18,12 @@ It writes
 [the partition record](../manifests/orks-schema-dialect-2020-12-portable-v1-partition.json).
 It does not validate instances or call a schema engine.
 
+[run-subset-scoped-incumbent.py](run-subset-scoped-incumbent.py) executes
+only the IN_DIALECT partition groups against the admitted incumbent
+engine. It is not executable. It requires an already materialized
+isolated environment and must not invoke a package manager. It is not
+the ORKS conformance command-line interface.
+
 From the repository root, run:
 
 ```bash
