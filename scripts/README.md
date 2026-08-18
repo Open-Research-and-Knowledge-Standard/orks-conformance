@@ -7,6 +7,17 @@ repository. It is dependency-free project infrastructure that runs offline
 and checks the closed repository structure, licensing, source and vendor pins,
 dependency records, links, and public-content boundaries.
 
+[classify-dialect.py](classify-dialect.py) is the construct-only dialect
+classifier. It is not executable. From the repository root:
+
+```bash
+python3 scripts/classify-dialect.py
+```
+
+It writes
+[the partition record](../manifests/orks-schema-dialect-2020-12-portable-v1-partition.json).
+It does not validate instances or call a schema engine.
+
 From the repository root, run:
 
 ```bash
