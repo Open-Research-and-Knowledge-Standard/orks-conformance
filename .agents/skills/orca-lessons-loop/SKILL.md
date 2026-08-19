@@ -9,7 +9,7 @@ description: >-
   would be true in a different project, and when a verification regime is
   producing more artifacts than the work it verifies.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-009a
   generated: true
 ---
@@ -17,7 +17,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-009a in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -117,14 +117,41 @@ upstream and none was told what a report must contain, which is
 shape one level up: an instruction whose satisfaction condition lives somewhere
 the reader cannot reach.
 
-**One file, one finding, in the owning source's declared intake path.** Name it
-`gap-YYYY-MM-DD-<your-slug>-<short-slug>.md`. Commit exactly that file, message
-prefixed `gap-intake:`, and touch nothing else - a report arriving inside a larger
-change is a report the receiver must first separate from your work.
+**One report, one finding, through the channel the owning source declares** in
+its profile's `inbound_channel`, CANON-008 section 2.3. That field is the only
+place the route is written down,
+because a repository's own inbox is knowable only by that repository - read it,
+and do not assume the shape.
 
-**Where your environment cannot write outside your own repository, draft it there
-and say so.** A report that cannot be delivered is still evidence; an operator
-carries it across.
+**Where the declared channel is an issue tracker URL, open one issue** using the
+source's gap-report form, and file nothing else. This is the route
+`orca-baseline` takes from 2026-08-15, decision 0124.
+
+**Where the declared channel is a path**, name the file
+`gap-YYYY-MM-DD-<your-slug>-<short-slug>.md`, commit exactly that file, message
+prefixed `gap-intake:`, and touch nothing else - a report arriving inside a
+larger change is a report the receiver must first separate from your work.
+
+**The eight fields below are identical on both routes**, and that is the point of
+saying the transport separately. A form's labels are the field names; a file's
+list keys are the field names; one validator reads both. If you have filed by
+one route you already know the other.
+
+**Do not fill in a triage or a disposition on either route.** The rule in *What
+you do not fill in* is about the report, not about the file format.
+
+**Why the route moved, for a filer who remembers the old one.** A committed
+report needed a clone, a template copy, a commit, a pull request and a merge
+before anyone could read it - and three reports sat unmerged for up to four days
+in exactly that state, invisible to the receiver's own tooling because the record
+was not on its default branch. Filing should cost one step. The **ruling** still
+lands as a tracked record in the receiving repository, so nothing about what you
+are owed has weakened; what changed is that the receiver commits it rather than
+you.
+
+**Where you cannot reach the declared channel, draft the report in your own
+repository and say so.** A report that cannot be delivered is still evidence; an
+operator carries it across.
 
 ### The eight fields, and why each is refused when absent
 
@@ -136,7 +163,7 @@ carries it across.
 | `affected` | Every canonical id, role or capability you believe is involved, **or `unknown`**. `unknown` is honest; a guess that omits the nearest owner is what cost another team a full triage cycle |
 | `kind_claimed` | `missing`, `stale`, `wrong`, `unclear` or `unsatisfiable`. These are different findings and are triaged differently |
 | `searched` | **How much of the corpus you actually examined, with numbers.** Not how much you meant to |
-| `status` | `new`. Triage sets everything after that |
+| `status` | `new`. Triage sets everything after that. **On the issue route you do not write it** - an open issue without the receiver's triage label *is* `new`, and applying that label *is* the transition. The field was measured unmaintained on the file route, reading `new` on nine reports that had been triaged, three already closed |
 | `priority` | `high`, `normal` or `low` - and see the rule below, which takes it out of your hands in one case |
 
 **`searched` is the field that makes the report usable.** *"No evidence of X"*
@@ -191,6 +218,13 @@ can enforce it.
 run it before filing. Where it is not, the field table above is the contract, and a
 report that satisfies it is filed correctly whether or not anything here could
 check that.
+
+**One validator serves both routes**, because the contract is the fields and
+never their serialisation. Against `orca-baseline`, a drafted file is
+`node build/gaps.mjs <report.md>` and a filed issue is
+`node build/gaps.mjs --issue <number>`. A receiver that had to write a second
+validator for a second transport would have two definitions of a valid report
+and, before long, two answers - CANON-001.
 
 ## Fix the system, not the instance
 

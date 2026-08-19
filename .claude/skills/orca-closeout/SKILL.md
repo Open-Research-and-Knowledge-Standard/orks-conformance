@@ -10,7 +10,7 @@ description: >-
   Also governs destructive-action limits and the format for handing over a
   blocked action with its command.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-006
   generated: true
 ---
@@ -18,7 +18,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-006 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -41,7 +41,8 @@ metadata:
    them; work left in a working tree is one worktree removal from gone, and the
    repository holding it is usually not the one being watched.
 5. No open pull requests remain, verified across every repository in the
-   project.
+   project. Disposition is section 1b. A population the closeout must not act
+   on is partitioned per section 2e.
 6. No stale branches, worktrees or workspaces remain, local or remote. Confirm
    rather than assume.
    **Check the runtime and the version control separately, and remove with the
@@ -63,8 +64,11 @@ metadata:
    when you made nothing. Never report the pool's contents as your own.
 8. Remaining gates, residual risks and the exact next action are recorded.
 9. The next-session prompt or command is produced.
-10. **The session record is closed**, per section 2c. Closing it is what re-arms
-    the handoff-freshness rule, so it is the last step and not the first.
+10. **The session record is closed**, per section 2c. In this authoring
+    repository closing it is what re-arms the handoff-freshness rule, so it is
+    the last step and not the first. In a consuming project, delete the file
+    last for the same reason: the next session should not inherit an open
+    record that names work that has ended.
 
 ## 2c. Handoff currency belongs to the closeout
 
@@ -93,8 +97,32 @@ So the session is represented, and the rule consults it:
 |---|---|
 | **What opens one** | Startup obligation 9, naming the approved task |
 | **What closes one** | Closeout obligation 10, after the handoff is written |
-| **Where it lives** | The working tree, untracked - its correct lifetime is the worktree's, and a session record that outlives the checkout it describes is a lie |
-| **How the check reads it** | While a session is open the rule **defers**; closing it re-arms the rule, and the close is refused while the handoff is stale |
+| **Where it lives** | `.orca/session.json` in the working tree, untracked - its correct lifetime is the worktree's, and a session record that outlives the checkout it describes is a lie |
+| **How the check reads it** | In this authoring repository: while a session is open the rule **defers**; closing it re-arms the rule, and the close is refused while the handoff is stale. A consuming project has no such check - the convention below is not a control |
+
+### The session-record convention
+
+**This is what a consumer can do.** The installed capability format cannot carry
+a mechanism - decision 0134 - so the obligation is a documented file convention.
+An editor is enough. Nothing has to ship for it to be performable.
+
+| | |
+|---|---|
+| **Filename** | `.orca/session.json` |
+| **Ignore** | List the path in `.gitignore` before creating a record. A tracked session record outlives the worktree and would itself be a commit on a watched path |
+| **Shape** | A JSON object with `work` (the approved task), `opened` (unix seconds when opened), `path` (this worktree), `branch`, and `head`. A record that does not name a task represents nothing |
+| **Open** | Startup obligation 9, after the approved task is identified. Create the file |
+| **Amend** | If the approved work changes, rewrite `work` and re-read `path`, `branch` and `head`. Preserve `opened` |
+| **Close** | Closeout obligation 10, last, after the handoff is written. Delete the file |
+
+**A hand-written record defers nothing.** Nothing in a consuming project reads
+the file. The freshness-deferral control is `administrative` for consumers:
+there is no shipped check that consults it, and there is no check to invoke.
+Opening one is so a parallel session and a later closeout can see that work is
+in flight. It is not a control.
+
+This authoring repository still has `build/session.mjs`, and the deferral is
+`engineered` here.
 
 **Deferral is announced, never silent.** A suppressed check that says nothing is
 indistinguishable from a check that passed, and an exemption nobody can see is an
@@ -180,7 +208,7 @@ question into an obstacle.
 
 A handover is validated against the state at the moment of **writing** and
 executed against the state at the moment of **reading**. Closeout obligations 4,
-5 and 6 change that state — committing, integrating, retiring branches — so where
+5 and 6 change that state - committing, integrating, retiring branches - so where
 the writing session performs them afterwards, the two states are guaranteed to
 differ.
 
@@ -563,6 +591,60 @@ are silent:
 **Earlier entries are not edited to match later truth.** Correcting them would
 destroy the record of what was believed when a decision was taken, which is the
 only thing history is for. The separation is what makes leaving them alone safe.
+
+**This protects a claim. It does not freeze a pointer** - decision 0129.
+
+| | Edited? | Because |
+|---|---|---|
+| A **claim** - a sentence whose truth value changed | **never** | Its being wrong now is the record |
+| A **pointer** - a citation, a link, a path to a record that moved | **repointed** | Where the record lives was never what the entry asserted |
+
+A citation names a record. It does not assert where that record sits, so moving
+the record does not make the entry wrong, and repointing it revises nothing a
+reader of that entry was told. **Leaving it stale does the damage this section
+exists to prevent**: the reader follows it and lands on a different record, or on
+nothing, and neither outcome preserves what was believed at the time.
+
+Measured before this was written. `lessons/0114` found seven lesson numbers held
+by two records each; the repair needed 144 citations repointed and **59 of them
+sit below the boundary this section draws**. Without the distinction the choice
+was to edit protected history or to leave 59 citations resolving to a record
+their author did not mean - **and the second is worse, because a collision is
+detected and a wrong citation is silent**. `lessons/archive/0130` carries the full
+analysis.
+
+**A renumber is still a change to every citing document**, which
+`lessons/archive/0019` promoted and this does not soften. What this settles is
+that the change is permitted below the boundary, not that it is cheap.
+
+## 1b. An open pull request is disposed before it is acted on
+
+The inherited-state inventory lists open pull requests. This section owns what
+happens next.
+
+**Write one disposition per open pull request before any merge, close, or edit
+of its branch.** Live state is read first-hand, never from the handoff table.
+
+| Disposition | Means |
+|---|---|
+| **merge** | The change is accepted as it stands. Authorization to merge is still a decision under CANON-004; this row is not that authorization |
+| **correct** | The change is wanted and is not mergeable as it stands. Name what must change. Do not edit until the disposition is written |
+| **leave** | Do not merge, close, or edit. Another session's, not this act, or a prior ruling forbids resuming it |
+| **partition** | The closeout must not act on it. A population that is red in the steady state is reported and bound on the rest, not lowered |
+
+**This is not gap-report triage.** Gap receiving belongs to the receiving
+repository's intake ledger, not to this document. An open pull request is
+committed work awaiting a decision; a gap report is a finding awaiting a
+ruling. The vocabularies do not substitute.
+
+**A disposition is not a merge.** Acting on `merge` or `correct` still requires
+authorization. `leave` and `partition` require none.
+
+**Another session's pull request is left, never cleaned.** Cleaning it is the
+same class of act as cleaning another session's worktree.
+
+A session that is not acting on pull requests inventories them and stops.
+Inventory is not a commission to triage.
 
 ## 1. Scope
 

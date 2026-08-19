@@ -8,7 +8,7 @@ description: >-
   is about to be copied rather than cited, when deciding which document owns a
   concern, and when a second instance of a repair is needed.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-001
   generated: true
 ---
@@ -16,7 +16,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-001 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -228,7 +228,7 @@ the exemption its local appearance invites.
 **That holds only while the named document is reachable by the reader**, and for a
 consumer the only documents they hold are the ones the distribution ships. A
 qualified reference to a source no capability carries is as dead as an unqualified
-one — deader, because it looks resolvable. Six canonical sources here are sourced
+one - deader, because it looks resolvable. Six canonical sources here are sourced
 into no shipped capability, and until 2026-08-05 the exemption covered exactly that
 class:
 `intake/gaps/gap-2026-08-04-five-canon-documents-ship-to-no-consumer.md`.
@@ -310,7 +310,7 @@ When inheritance is used:
 3. Inherited content must not be copied into the child.
 4. Parent changes apply automatically unless the child explicitly pins or overrides them.
 5. Overrides must be narrow, visible, and justified.
-6. A child must honour the parent’s contract and invariants.
+6. A child must honour the parent's contract and invariants.
 7. Inheritance hierarchies must remain shallow and understandable.
 8. Inheritance must not be used merely to reuse convenient fragments.
 9. Unrelated capabilities must be composed rather than placed in a common artificial parent.
@@ -443,7 +443,7 @@ Do not create a complete new agent prompt by copying an existing prompt and modi
 
 An agent must not silently restate or reinterpret inherited policy.
 
-Task prompts should supply the current task and parameters rather than redefine the agent’s permanent operating model.
+Task prompts should supply the current task and parameters rather than redefine the agent's permanent operating model.
 
 ## 11. Workflow and Process Rules
 

@@ -1,0 +1,3 @@
+# The CANON-006 section 2c session record. It is required to live in the working
+# tree untracked, and its correct lifetime is the worktree's.
+.orca/session.json

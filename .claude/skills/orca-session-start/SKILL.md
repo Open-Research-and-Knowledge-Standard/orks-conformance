@@ -7,7 +7,7 @@ description: >-
   parallel; and when a position report is asked for. Closeout is a separate
   capability - orca-closeout.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-006
   generated: true
 ---
@@ -15,7 +15,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-006 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -43,9 +43,11 @@ metadata:
    accepted contract - including a branch or worktree whose name corresponds to
    no approved work item. Stop if the mismatch cannot be corrected without new
    authority.
-9. **Open a session record** naming the approved task from step 5, per section
-   2c. Work in flight is ahead of the handoff by construction, and this is what
-   tells the freshness rule that the gap is a session rather than a defect.
+9. **Open a session record** naming the approved task from step 5, per the
+   convention in section 2c. Work in flight is ahead of the handoff by
+   construction. In this authoring repository the record tells the freshness
+   rule that the gap is a session rather than a defect. In a consuming project
+   the file is the convention in section 2c and defers nothing.
 
 A session must be able to start with **no inherited context** beyond the durable
 records. If it cannot, the previous closeout was incomplete.
@@ -69,7 +71,7 @@ afterwards, and the state that hurts is the state nobody was watching.
 | **Both listings, separately** | A worktree the runtime created is listed by the runtime; one created with version control is not. Neither listing is complete, and the gap is where an unaccounted writable checkout survives |
 | **Work a crash would take** | Uncommitted paths, unpushed commits, and branches with no upstream **whose commits are not on the base branch**. Inherited at-risk work is still at risk, and finding it at closeout is finding it late |
 | **Runtime state that already exists** | Tasks, dispatches and gates. The pool is runtime-global: **enumerate it, and claim none of it.** A session that adopts another's task state reports someone else's work as its own |
-| **Open pull requests** | An open pull request is committed work awaiting a decision. A session that does not know it exists will duplicate it or contradict it |
+| **Open pull requests** | An open pull request is committed work awaiting a decision. A session that does not know it exists will duplicate it or contradict it. Disposition is section 1b |
 | **Signs of a parallel agent** | Another worktree of this project, dirty or on an unfamiliar branch, is a session running now. Section 4 governs what follows |
 
 **A dirty worktree that is not this session's is reported, never cleaned.**
@@ -79,6 +81,35 @@ the tree looks like leftover mess rather than someone's work in flight.
 `node build/sweep.mjs --startup` answers the first four from the registered
 repository list in seconds. It is scoped to this repository by default; the
 estate is an explicit widening, per CANON-006 section 1 step 6.
+
+## 1b. An open pull request is disposed before it is acted on
+
+The inherited-state inventory lists open pull requests. This section owns what
+happens next.
+
+**Write one disposition per open pull request before any merge, close, or edit
+of its branch.** Live state is read first-hand, never from the handoff table.
+
+| Disposition | Means |
+|---|---|
+| **merge** | The change is accepted as it stands. Authorization to merge is still a decision under CANON-004; this row is not that authorization |
+| **correct** | The change is wanted and is not mergeable as it stands. Name what must change. Do not edit until the disposition is written |
+| **leave** | Do not merge, close, or edit. Another session's, not this act, or a prior ruling forbids resuming it |
+| **partition** | The closeout must not act on it. A population that is red in the steady state is reported and bound on the rest, not lowered |
+
+**This is not gap-report triage.** Gap receiving belongs to the receiving
+repository's intake ledger, not to this document. An open pull request is
+committed work awaiting a decision; a gap report is a finding awaiting a
+ruling. The vocabularies do not substitute.
+
+**A disposition is not a merge.** Acting on `merge` or `correct` still requires
+authorization. `leave` and `partition` require none.
+
+**Another session's pull request is left, never cleaned.** Cleaning it is the
+same class of act as cleaning another session's worktree.
+
+A session that is not acting on pull requests inventories them and stops.
+Inventory is not a commission to triage.
 
 ## 2c. Handoff currency belongs to the closeout
 
@@ -107,8 +138,32 @@ So the session is represented, and the rule consults it:
 |---|---|
 | **What opens one** | Startup obligation 9, naming the approved task |
 | **What closes one** | Closeout obligation 10, after the handoff is written |
-| **Where it lives** | The working tree, untracked - its correct lifetime is the worktree's, and a session record that outlives the checkout it describes is a lie |
-| **How the check reads it** | While a session is open the rule **defers**; closing it re-arms the rule, and the close is refused while the handoff is stale |
+| **Where it lives** | `.orca/session.json` in the working tree, untracked - its correct lifetime is the worktree's, and a session record that outlives the checkout it describes is a lie |
+| **How the check reads it** | In this authoring repository: while a session is open the rule **defers**; closing it re-arms the rule, and the close is refused while the handoff is stale. A consuming project has no such check - the convention below is not a control |
+
+### The session-record convention
+
+**This is what a consumer can do.** The installed capability format cannot carry
+a mechanism - decision 0134 - so the obligation is a documented file convention.
+An editor is enough. Nothing has to ship for it to be performable.
+
+| | |
+|---|---|
+| **Filename** | `.orca/session.json` |
+| **Ignore** | List the path in `.gitignore` before creating a record. A tracked session record outlives the worktree and would itself be a commit on a watched path |
+| **Shape** | A JSON object with `work` (the approved task), `opened` (unix seconds when opened), `path` (this worktree), `branch`, and `head`. A record that does not name a task represents nothing |
+| **Open** | Startup obligation 9, after the approved task is identified. Create the file |
+| **Amend** | If the approved work changes, rewrite `work` and re-read `path`, `branch` and `head`. Preserve `opened` |
+| **Close** | Closeout obligation 10, last, after the handoff is written. Delete the file |
+
+**A hand-written record defers nothing.** Nothing in a consuming project reads
+the file. The freshness-deferral control is `administrative` for consumers:
+there is no shipped check that consults it, and there is no check to invoke.
+Opening one is so a parallel session and a later closeout can see that work is
+in flight. It is not a control.
+
+This authoring repository still has `build/session.mjs`, and the deferral is
+`engineered` here.
 
 **Deferral is announced, never silent.** A suppressed check that says nothing is
 indistinguishable from a check that passed, and an exemption nobody can see is an

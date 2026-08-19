@@ -10,7 +10,7 @@ description: >-
   intent. The coordinator never implements, never verifies its own dispatch,
   and never absorbs a review finding into its own edits.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-012
   generated: true
 ---
@@ -18,7 +18,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-012 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -105,7 +105,7 @@ an indefinite block, and the cost of asking is one decision against work that
 proceeds under a role nobody designed.
 
 **The gap is logged either way, at high priority, and in parallel with the ask.**
-Not after the answer, and not only on the waiting branch — a fallback makes an
+Not after the answer, and not only on the waiting branch - a fallback makes an
 absent role **cheaper to live with**, and cheap absences are never built. The
 priority is not discretionary: reaching the default case is what makes it high.
 
@@ -120,7 +120,7 @@ declares itself temporary:
 - **It is marked temporary in its own text**, names the gap record it stands in
   for, and claims no permanent place in the role set.
 - **It binds one job**, per CANON-010. A temporary role is not a licence to
-  widen — the reason it exists is that no role covered the work, not that several
+  widen - the reason it exists is that no role covered the work, not that several
   half-covered it.
 - **The brief carries explicit stop conditions**, per section 4. This obligation
   is unchanged and remains the load-bearing one: a temporary role has no durable
@@ -146,12 +146,12 @@ inherits both properties. Decision 0065 records the evidence and both halves of
 it; `lessons/near-misses/0003` records the breach.
 
 **That evidence supports the fallback for *specified* work and says nothing about
-judgement work** — the four measured dispatches were all specified. Asking first
+judgement work** - the four measured dispatches were all specified. Asking first
 is what covers the difference, because the coordinator cannot reliably tell which
 of the two it is holding at the moment it has to decide.
 
 **This is a fallback, not a tier of actor.** Where a declared role covers the
-work, it is dispatched — a default executor is never chosen for being cheaper,
+work, it is dispatched - a default executor is never chosen for being cheaper,
 faster or already briefed.
 
 ## 4. What a dispatch must carry

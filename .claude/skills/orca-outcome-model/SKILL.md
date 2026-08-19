@@ -7,7 +7,7 @@ description: >-
   needs breaking rather than another iteration, and when deciding what
   actually changed for the party the work was for.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-013
   generated: true
 ---
@@ -15,7 +15,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-013 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -169,7 +169,7 @@ even where nothing was able to prevent it live.
 
 Orca vends the second witness. `orca orchestration task-list --run <id> --json`
 inspects a Run **without binding to it**, and a task record carries `id`,
-`parent_id`, `status`, and a `result` blob holding **`filesModified`** — what the
+`parent_id`, `status`, and a `result` blob holding **`filesModified`** - what the
 runtime saw a task change, written by the runtime and not by the actor.
 `build/adapter-orca.mjs` reads it.
 
@@ -182,7 +182,7 @@ Outcome: O-17
 
 Anchored to its own line and case-sensitive, so a spec *discussing* an outcome
 does not bind itself to one. **A dispatch carrying no marker is reported, never
-guessed**, and deriving one from `parent_id` is refused outright — the correction
+guessed**, and deriving one from `parent_id` is refused outright - the correction
 chain is exactly where a fresh budget gets minted, which is what section 2
 exists to stop.
 
@@ -193,7 +193,7 @@ every link is properly parented. The adapter reports that as outcome drift.
 ### Three read outcomes, never two
 
 A runtime that did not answer, a runtime that answered and refused, and a Run.
-Collapsing the first two reports a live runtime as absent — which is how the
+Collapsing the first two reports a live runtime as absent - which is how the
 claim that Orca had no tasks at all survived for two days. `unreachable`,
 `refused`, and the tasks are distinct, and the read is bounded by a timeout
 because a second `orca` on the same machine was measured hanging rather than
@@ -202,7 +202,7 @@ answering.
 ### What is still missing, named rather than implied
 
 **Nothing forces a dispatch through Orca.** The adapter can see every task in a
-Run and nothing about work performed outside one — this document's own sessions
+Run and nothing about work performed outside one - this document's own sessions
 included. **`admit()` still has no caller**: the authorization that refuses a
 dispatch once the breaker has fired is written and proven, and live withholding
 needs a coordinator that asks before dispatching. The tier table says so in those

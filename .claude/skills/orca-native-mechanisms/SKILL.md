@@ -9,7 +9,7 @@ description: >-
   removal or a merge, and whenever a command that creates is about to be used
   as a query.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-007
   generated: true
 ---
@@ -17,7 +17,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-007 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -82,6 +82,33 @@ Before probing by attempting:
 
 A side effect you intend to undo is still a side effect you caused.
 
+## 0.2 A receipt that the bytes reached the PTY is not a started session
+
+`worker-start` and `dispatch --inject` can report `dispatch_input accepted`
+while the agent has not begun a session. The receipt answers Orca's question:
+did the bytes reach the PTY. It does not answer the coordinator's: did an
+agent session start.
+
+Measured 2026-08-19 against OpenCode 1.18.18. `worker-start --agent opencode`
+returned `state: ready`, `stage: input_accepted`. The terminal was the home
+screen (`Ask anything...`, `tab agents`). No session, no brief, no tools. A
+wait armed on that receipt would have timed out on a worker that never
+started. `lessons/0145`. Claude on the same loop the same day consumed the
+inject. The gap is agent-specific, not a general `worker-start` failure.
+
+After every inject into an OpenCode TUI, and after any inject whose agent
+has not yet been proven to consume one:
+
+1. Read the agent terminal.
+2. If the tail is the home screen - no in-session prompt - the dispatch did
+   not start work.
+3. Wait for interface readiness, send the spec (short; point at a file for
+   the rest), and confirm the next read shows a session.
+4. Only then arm the wait.
+
+Do not read `accepted` as started. That is lesson 0142 applied to
+orchestration.
+
 ## 1. Tool boundary
 
 Orca orchestration is not interchangeable with vendor agent-spawning. A vendor
@@ -98,7 +125,7 @@ rather than describing it as orchestrated.
 **Parallel or delegated work is dispatched through `orca orchestration` unless a
 stated reason says why it could not be.** The runtime vends what the vendor
 mechanism does not: `task-create`, `dispatch`, `worker-start`, `gate-create`,
-`ask`, and an inbox — so a task record, dispatch provenance, a decision gate and
+`ask`, and an inbox - so a task record, dispatch provenance, a decision gate and
 an answerable question all exist by construction rather than by the coordinator
 remembering to write them down.
 
@@ -116,7 +143,7 @@ accurate and the pair reads as orchestrated work. `lessons/0091`.
 | Decision gates | The coordinator carried four rulings to the human by hand |
 | `worker_done` authority | Each agent's own report, accepted on trust |
 | An inbox | One `SendMessage` to a running agent, invisible to any record |
-| Write-lease partitioning | File scopes assigned by hand — and **two dispatches took the same decision number** |
+| Write-lease partitioning | File scopes assigned by hand - and **two dispatches took the same decision number** |
 
 **Where the vendor mechanism is used anyway**, the session states in its runtime
 provenance that the work ran **outside Orca orchestration**, in those words. That
@@ -234,6 +261,17 @@ progress.
 
 Do not follow a valid completion message with a manual status update. Reserve
 manual updates for explicit recovery or override.
+
+**A rejected `worker_done` is neither.** Orca can deliver the message to the
+Run as `Rejected worker_done` with
+`_orcaLifecycleRejection.code` = `dispatch_capability_invalid` ("The Dispatch
+capability is missing"). The task stays `dispatched`. `worker-release` then
+refuses because the dispatch never settled. Measured twice on 2026-08-19;
+`lessons/0145`.
+
+Recovery: confirm the claimed work first-hand, then `task-update --status
+completed` (or `failed`). Do not treat the rejection as a failed worker, and
+do not treat it as a settled one.
 
 ## 8. A review-only completion does not authorize coordinator edits
 
@@ -355,7 +393,7 @@ paths are declared in `build/withdrawn.mjs` and are the checker's only exemption
 
 A withdrawal is a measurement, and a measurement can be wrong. **A claim leaves
 section 16.1 only by being shown true**, never by becoming inconvenient, and it is
-recorded here with the same permanence — deleting the history would lose the fact
+recorded here with the same permanence - deleting the history would lose the fact
 that the estate believed the opposite for three days.
 
 | Claim | Withdrawn | Reinstated | Scope, and what stays false |
@@ -363,7 +401,7 @@ that the estate believed the opposite for three days.
 | A lane withholds a capability by its `:ro` mount | 2026-07-31 | 2026-08-03, decision 0084 | **True of the estate-owned container mechanism.** `orca-workspace-isolation` at `2.0.0` mounts a declared repository set per workspace and a `read-only` member is mounted `:ro`. Measured both directions on 2026-08-03: a writable member accepts a write; a read-only member refuses one **from `root` inside the container**, and the host file is unchanged. **Still false of an Orca environment recipe alone**, which is why the section 16.1 row above it stands |
 
 **Why it was withdrawn, and why that was reasonable.** The 2026-07-31 basis reads
-*"Same mechanism, same absence"* — it treated the lane claim as a restatement of
+*"Same mechanism, same absence"* - it treated the lane claim as a restatement of
 the recipe claim. They are not the same claim. A recipe **starts a script**, and
 the script does the mounting; the schema's silence bounds what a recipe can
 *say*, never what it can *start*.
