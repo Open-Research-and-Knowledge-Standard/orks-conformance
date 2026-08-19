@@ -8,7 +8,7 @@ description: >-
   verifier independence, verdict format, and the rule that the verifier never
   scales away.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-005
   generated: true
 ---
@@ -16,7 +16,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-005 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -52,8 +52,8 @@ Re-run the defect mutation rather than inheriting a prior verdict.
 A mutation test has two steps and only one of them is usually checked. The run is
 watched closely; **the mutation itself is assumed.**
 
-Where it silently does not apply — an anchor that no longer matches, a patch to a
-path nobody reads, an edit reverted by a formatter — the check passes, and that
+Where it silently does not apply - an anchor that no longer matches, a patch to a
+path nobody reads, an edit reverted by a formatter - the check passes, and that
 pass is read as *proved capable of failing*. **It does not merely fail to add
 confidence; it manufactures it**, in the one procedure whose entire purpose is to
 withhold it. A record then says *proven red* and is false in a way no reader can
@@ -72,6 +72,46 @@ Two obligations, and the second is cheaper than it looks:
 one. An anchor can match and still produce a mutant the check does not look at,
 which passes green for a different reason. Stated so it is not mistaken for
 covered.
+
+**Detection is not prevention.** The obligation above catches a mutation that
+stopped applying and says nothing about writing one that keeps applying. A guard
+whose anchor moves with every repair is re-authored forever or quietly rots, and
+when it goes red it goes red at the subject - the run reports a misbehaving
+mutation against work that was correctly fixed, which reads as the subject's
+fault rather than the guard's.
+
+> A mutation written to hold a finding, whatever state that finding is in at the
+> moment the mutation is authored, anchors on a structural feature the repair
+> cannot move - a section heading, a table-row marker, a stable identifier.
+> Never on prose the repair is expected to rewrite, and never on wording the
+> verifier itself proposed.
+>
+> *The antecedent is authoring time, not finding state.* As accepted the rule
+> bound *"a mutation that holds a closed finding"*, which read literally excuses
+> the guard written while the finding is still open - the case the paragraph
+> below identifies as the one that fails. Corrected by `decisions/0137` ruling 2
+> as amended 2026-08-17, on observation **O1** of
+> `verifications/canon-005-anchor-rule-verification.md`.
+
+**The population at risk is identifiable in advance**, which is what makes this
+predictable rather than a matter of care. A guard authored for a finding that is
+already **closed** takes its anchor from text that has been **observed**, and it
+survives any wording the repair chose. A guard authored while the finding is
+still **open** has to predict the repair's wording, and that is the population
+that fails.
+
+**The instance, measured.** Round three of the item 1 execution-surface chain
+wrote a guard for the one finding still open, and anchored it on the wording the
+verifier had used in its own scratch repair. The correcting session repaired that
+finding with different wording, the anchor matched nothing, and the run printed
+*"a mutation misbehaved - the evidence above is not trustworthy"* against a
+subject that was correctly fixed. Twelve guards in the same script, every one
+authored for a finding already closed and so against text that had been observed,
+applied without trouble.
+`verifications/plan10-item1-execution-surface-correction-round4-verification.md`
+section 1 and
+`verifications/plan10-item1-execution-surface-correction-round3-probe.sh` are the
+evidence; `decisions/0137` ruling 2 is where it was accepted.
 
 ## 1a. Control tiers
 
@@ -109,14 +149,14 @@ the reader does not have and cannot obtain.
 **Measured rather than reasoned about**, 2026-08-05: across the nine canonical
 documents compiled into shipped capabilities, **45 of 45 `engineered` rows cite a
 `build/*.mjs` tool, and `skills-lock.json` installs none of them.** Not a defect
-in any one row — the ratio is 45 out of 45, which makes it a property of the
+in any one row - the ratio is 45 out of 45, which makes it a property of the
 shape rather than an oversight in a document.
 
 **So the honest reading, for an installed copy:**
 
 | Row says | Means where it was authored | Means in a project that installed it |
 |---|---|---|
-| `eliminated` | The capability is absent | The capability is absent — **this one does travel**, because it is a statement about what an actor can do rather than about a check |
+| `eliminated` | The capability is absent | The capability is absent - **this one does travel**, because it is a statement about what an actor can do rather than about a check |
 | `engineered` | A named check refuses it | **`administrative`.** The rule binds a reader who remembers it, and nothing checks it |
 | `administrative` | A rule states it | The same |
 
@@ -130,7 +170,7 @@ rely on this paragraph to excuse the gap. The claim must still be true where it
 is authored, still name a tool that exists, and still be proven red on its own
 defect. This scopes the claim's reach; it does not weaken the claim.
 
-**`lessons/0085` is the instance that found it** — an obligation added to
+**`lessons/0085` is the instance that found it** - an obligation added to
 CANON-006 section 2c, compiled into the two capabilities every session runs, with
 its mechanism in `build/`. The finding was first written as one obligation
 needing scoping and was wrong in that shape: the measurement above is what
@@ -210,7 +250,7 @@ tool at it, so every green was a statement about examples.
 **Where a live corpus cannot be made clean today, ratchet it.** Assert the count
 does not grow rather than asserting it is zero: the debt stays visible, a new
 instance goes red, and lowering the number is a deliberate commit. A ratchet is
-not a suppression — the number is in the gate and in the open.
+not a suppression - the number is in the gate and in the open.
 
 ## 1c. A check is scoped to the obligation, not to the tool
 

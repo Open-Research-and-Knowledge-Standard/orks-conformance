@@ -8,7 +8,7 @@ description: >-
   absence must be stated rather than omitted, when the profile and the live
   workspace disagree, and when a parameter has no obvious owner.
 metadata:
-  baselineVersion: "0.23.0"
+  baselineVersion: "0.24.0"
   derivedFrom: CANON-008
   generated: true
 ---
@@ -16,7 +16,7 @@ metadata:
 <!--
   GENERATED - DO NOT EDIT.
   Non-authoritative copy, derived from CANON-008 in orca-baseline.
-  Baseline version: 0.23.0
+  Baseline version: 0.24.0
   Regenerate with: node build/compile.mjs
   Edits made here are lost on the next update and fix nothing upstream.
 -->
@@ -68,7 +68,7 @@ Every repository in the project, with:
 | `rules` | Path to that repository's own rules, or `none` |
 | `lane` | The mechanism that enforces this repository's access, or `none` |
 | `visibility` | `public` or `private`. Who can read the repository, not who can write it |
-| `inbound_channel` | Where **this** repository receives a report from another, or `none (searched: <path>)` |
+| `inbound_channel` | Where **this** repository receives a report from another - a tracked path, or an issue tracker URL - or `none (searched: <path>)` |
 | `entry_point` | `generated` or `none`. Whether section 5's generator writes this repository's entry point. Absent reads as `generated` |
 
 **`entry_point: none` says a project does not generate into a repository, and it
@@ -108,6 +108,31 @@ spends a bare `none` on *"this project has no such structure"*, and this field
 must distinguish **no inbox exists** from **nobody checked**. Decision 0100
 settled that form for a declared absence and this reuses it rather than inventing
 a second one.
+
+**A channel is a tracked path or an issue tracker URL, and both are checked -
+decision 0124.** A path is resolved inside the repository that declares it. A URL
+must be `https://github.com/<owner>/<repo>/issues`, and its *reachability* -
+whether that repository has issues enabled at all - is checked behind
+`--runtime`, for the reason `orca_repo_id` already is: a gate that needs the
+network is green on one machine only.
+
+**A URL was accepted unchecked until 2026-08-15, and that is recorded here
+rather than quietly corrected.** `build/profile-check.mjs` read
+`if (!p || p.includes('://')) continue`, so a repository could declare
+`https://example.invalid/nowhere` and the function whose entire subject is *a
+channel nobody can reach* returned zero problems - while the Control tier row
+reported the channel resolved. The passing condition was satisfiable without the
+property the check is named for, which is
+[`lessons/0127`](../lessons/0127-a-check-whose-passing-condition-is-satisfiable-without-the-property-it-is-named-for.md)'s
+class, found in the field's own control. Both directions are now proven red by
+mutation.
+
+**A path channel and a URL channel are not interchangeable, and the difference
+is durability.** An issue tracker is where a report **arrives**; it is not where
+a ruling **lives**. A project declaring a URL still owes its rulings a tracked
+record, because CANON-002 does not accept an artifact outside version control as
+the durable answer to anything. Section 2.5's record paths are unchanged by this
+and are what carry the disposition.
 
 **Why it is a repository field and not a project one.** An inbox is a property of
 a repository - it is a directory inside one - and a project with four
@@ -411,7 +436,7 @@ checker looks there too:
 ```
 
 **Why this is offered rather than required.** `build/profile-check.mjs` searches
-the **directory** shape — a directory named for the parameter, holding entries.
+the **directory** shape - a directory named for the parameter, holding entries.
 It cannot search the **heading** shape, because deciding whether `## The task` in
 a document is a task hierarchy or a sentence answers wrong in both directions,
 and a false positive teaches people to ignore the check.
@@ -419,7 +444,7 @@ and a false positive teaches people to ignore the check.
 **The bootstrapper knows which shape its project uses and the checker cannot.**
 So a project recording planning as headings inside documents names the documents,
 and `checkDeclaredAbsences()` greps them for a heading matching the parameter.
-An unqualified `none` stays valid and is searched for the directory shape only —
+An unqualified `none` stays valid and is searched for the directory shape only -
 which is what every profile written before 2026-08-05 declares, and breaking them
 to buy a check is not a trade this contract makes.
 
@@ -472,10 +497,26 @@ knowledge are filed.
 | `estate_root` | Root the knowledge sources resolve from. Declared relative to the home directory so it resolves on any machine |
 | `sources` | Each knowledge source this project's roles bind to, by slug |
 | `gap_intake` | Where a finding about a source is filed, per source |
+| `execution_roles` | The execution-role capabilities this project intends to install, as exact `orca-role-*` identifiers, or `none` |
 
 Rules:
 
-- A project with no roles declares `none` for all three.
+- A project with no execution roles declares `execution_roles: none`. Where it
+  also binds no estate knowledge, it declares `none` for the other three
+  parameters as well.
+- **`execution_roles` is project intent, declared once for the project.** It is
+  never derived from `baseline.json`, from a lockfile, from what happens to be on
+  disk, or from command-line flags. The distribution manifest is the inventory
+  of roles available to install; the lockfile and disk are evidence of what did
+  install. Neither answers what this project intended.
+- Every non-`none` value is an exact comma-separated `orca-role-*` capability
+  identifier, with no prose, wildcard, count or duplicate. `orca-role-contract`
+  is a canonical capability and not an execution role merely because its name
+  shares the prefix; the install check reconciles declared identifiers against
+  the distribution's execution-role inventory.
+- The installed execution-role set equals this declaration exactly. One extra
+  installed role and one missing declared role are both defects. `none` is green
+  only while no execution role is installed.
 - `gap_intake` is required for every declared source. A source with no declared
   intake cannot receive a finding, so the finding is lost and the gap persists -
   and CANON-009a routes findings there rather than permitting a local fix.
@@ -522,6 +563,9 @@ A profile is valid only when:
 - every entry in the authority chain resolves, and no two entries claim the
   same concern;
 - every declared Orca identifier resolves against the live runtime;
+- `execution_roles` is present and contains only exact, non-duplicated
+  `orca-role-*` identifiers or `none`; installed-state reconciliation is the
+  install check's separate obligation;
 - every repository declaring a `lane` also declares an access mode - a lane
   enforces a declaration, it does not replace one. **Nothing validates that a
   declared lane enforces what it names**, and no check is specified here for it:
@@ -542,7 +586,8 @@ at the project root where section 2.3 declares a `project_root` the project
 and section 5.2's root content is carried by the authority repository's entry
 point. These are **generated materializations** under CANON-001 section 3.8:
 non-authoritative, derived from this profile, regenerable, and unsafe to edit.
-Subdirectory-scoped files are not claimed and are not generated.
+Subdirectory-scoped files are not claimed and are not generated, except
+section 5.4a's OpenCode command pointers.
 
 **This clause was unconditional until 2026-08-07 and two consumers could not
 satisfy it.** It required an artifact at a location this document never defined,
@@ -708,6 +753,20 @@ A vendor-specific entry point - `CLAUDE.md` and its equivalents - is generated
 as a pointer to `AGENTS.md` and carries no rules of its own. Where a project
 already maintains both as parallel authored files, that duplication is retired
 under section 2.7 rather than preserved.
+
+### 5.4a OpenCode command pointers
+
+OpenCode's `/` menu lists command files, not installed skills. Claude Code maps
+skills onto `/` itself. The OpenCode equivalent is a generated command file at
+`.opencode/commands/<capability>.md` for each name in the lockfile.
+
+Each file is a pointer: it tells the agent to load that skill and follow it. It
+carries no rules of its own. The set is the lockfile set, never a
+hand-maintained list. A generated file whose name is not in the lockfile is
+removed.
+
+These files live under a declared repository root, or the owned project root, so
+they are tracked. They are not a third install root and they are not a control.
 
 ### 5.5 Validity
 

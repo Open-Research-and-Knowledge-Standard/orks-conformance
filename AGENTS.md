@@ -6,7 +6,7 @@ resource: orks-conformance/AGENTS.md
 generated: true
 authoritative: false
 derived_from: .orca/project-profile.md
-baseline_version: 0.23.0
+baseline_version: 0.24.0
 regenerate_with: the bootstrap capability
 edit: unsafe - regenerated, and edits fix nothing upstream
 ---
@@ -27,7 +27,7 @@ Declared at `RULES.md`. Read it before changing anything here.
 ## Authority chain
 
 | # | Repository | Path | Owns |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 12 | `orks-standard` | `RULES.md` | `orks-standard`'s own rules |
 | 13 | `orks-conformance` | `RULES.md` | `orks-conformance`'s own rules |
 | 14 | `.github` | `RULES.md` | `.github`'s own rules |
