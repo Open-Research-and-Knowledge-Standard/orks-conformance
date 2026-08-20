@@ -496,7 +496,7 @@ fi
 # The authored rules of this repository moved from AGENTS.md to RULES.md so
 # that the generated entry point cannot overwrite them. The pin follows the
 # authored file; the retired startup and closeout duplicates did not travel.
-EXPECTED_RULES_SHA256='554ed228680903218dbdfb8c6e13df3bfa581e2d342007193c2f435f17ffb8af'
+EXPECTED_RULES_SHA256='ca64feec48c25a925a7937cec69a7cd2f579c47fdb41ac2bd9c45d037cb0fefe'
 EXPECTED_LICENSE_SHA256='cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30'
 EXPECTED_NOTICE_SHA256='684b55a0c87ed777a05dfc1cf090e8b8ae03225864399c898f3e177716f98716'
 EXPECTED_LOCK_SHA256='299234d5a5ee23e9e46a8f34205fcfc0b884c3610f1b61e474c55f8a493bed22'
