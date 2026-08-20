@@ -1,7 +1,7 @@
 # ORKS Conformance Rules
 
 You are working in `orks-conformance`, the public executable conformance
-repository for the Open Research and Knowledge Standard.
+repository for the Open Research & Knowledge System.
 
 This file carries only what is true of this repository alone. Session start,
 session close, and every project-wide rule are owned elsewhere and are named
@@ -30,9 +30,9 @@ The boundaries below are specific to this repository:
   manifests and reports, and conformance tooling.
 - A schema, fixture, validator, or report MUST NOT create, weaken, reinterpret,
   or silently repair normative behavior absent from the pinned standard.
-- Keep production storage/query logic, Rust harness implementation, profiles,
-  provider evaluation, models, and installation-local behavior out of this
-  repository.
+- Keep production Runtime storage/query logic, product implementations, Vault
+  instances, provider Evaluation, models, and installation-local behavior out
+  of this repository.
 
 ## Fixture and Public-Content Rules
 
@@ -49,8 +49,8 @@ The boundaries below are specific to this repository:
 - Pin supported standard versions and compatibility profiles exactly. Do not
   infer support from a branch name, nearby version, or latest upstream state.
 
-The project-wide character-set rule, and the bounded exception that admits the
-vendored capability set under `.agents/skills/` and `.claude/skills/`, are in
+The project-wide character-set rule and the 2026-08-19 retirement of the former
+vendored-capability exception are in
 `orks-planning/charter/working-rules.md`.
 
 ## Work Rules

@@ -1,7 +1,7 @@
 ---
 type: runtime-guidance
 title: orks-conformance - agent entry point
-description: Generated entry point for orks-conformance, part of ORKS (Open Research and Knowledge Standard). Roles: code. Access: read-only.
+description: Generated entry point for orks-conformance, part of ORKS (Open Research & Knowledge System). Roles: code. Access: read-only.
 resource: orks-conformance/AGENTS.md
 generated: true
 authoritative: false
@@ -13,7 +13,7 @@ edit: unsafe - regenerated, and edits fix nothing upstream
 
 # orks-conformance
 
-Part of **ORKS (Open Research and Knowledge Standard)**. Roles: `code`.
+Part of **ORKS (Open Research & Knowledge System)**. Roles: `code`.
 Access this session: **read-only**.
 
 The project profile is authoritative. It is held in a repository that is not
